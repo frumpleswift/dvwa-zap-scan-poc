@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+        <!--src/main/org/tempuri-->
+	<groupId>dvwa</groupId>
+	<artifactId>zap-scan</artifactId>
+	<version>1</version>
+
+	<name>DVWA Zap Scan POC</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+</dependency>
+		<dependency>				
+			<groupId>org.seleniumhq.selenium</groupId>								
+			<artifactId>selenium-java</artifactId>								
+			<version>2.53.0</version>								
+		</dependency>				
+        	<dependency>				
+            		<groupId>org.testng</groupId>								
+            		<artifactId>testng</artifactId>								
+            		<version>6.9.8</version>								
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+      <plugin>
+	<groupId>br.com.softplan.security.zap</groupId>
+	<artifactId>zap-maven-plugin</artifactId>
+	<configuration>
+    	<zapPort>8080</zapPort>
+	<shouldRunAjaxSpider>true</shouldRunAjaxSpider>
+		<targetUrl>http://172.17.0.12/vulnerabilities</targetUrl>
+
+		<authenticationType>form</authenticationType>
+		<username>admin</username>
+		<password>password</password>
+		<loginUrl>http://172.17.0.12/login.php</loginUrl>
+	
+	</configuration>
+	<executions>
+        <execution>
+            <phase>verify</phase>
+            <goals><goal>analyze</goal></goals>
+        </execution>
+    </executions>
+</plugin>
+</plugins>
+	</build>
+</project>

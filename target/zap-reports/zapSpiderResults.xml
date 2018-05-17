@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urls>
+  <url>http://172.17.0.12/robots.txt</url>
+  <url>http://172.17.0.12/vulnerabilities/xss_s/</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=M;O=D</url>
+  <url>http://172.17.0.12/sitemap.xml</url>
+  <url>http://172.17.0.12/login.php</url>
+  <url>http://172.17.0.12/dvwa/images/RandomStorm.png</url>
+  <url>http://172.17.0.12/dvwa/images/login_logo.png</url>
+  <url>http://172.17.0.12/vulnerabilities/exec/</url>
+  <url>http://172.17.0.12/dvwa/css/login.css</url>
+  <url>http://172.17.0.12/vulnerabilities/fi/</url>
+  <url>http://172.17.0.12/icons/back.gif</url>
+  <url>http://172.17.0.12/vulnerabilities/sqli/</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=N;O=D</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=S;O=A</url>
+  <url>http://172.17.0.12/vulnerabilities</url>
+  <url>http://172.17.0.12/vulnerabilities/view_help.php</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=S;O=D</url>
+  <url>http://172.17.0.12/vulnerabilities/view_source_all.php</url>
+  <url>http://172.17.0.12/icons/unknown.gif</url>
+  <url>http://172.17.0.12/vulnerabilities/xss_r/</url>
+  <url>http://172.17.0.12/icons/blank.gif</url>
+  <url>http://172.17.0.12/vulnerabilities/</url>
+  <url>http://172.17.0.12/vulnerabilities/sqli_blind/</url>
+  <url>http://172.17.0.12/vulnerabilities/upload/</url>
+  <url>http://172.17.0.12/vulnerabilities/captcha/</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=N;O=A</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=D;O=A</url>
+  <url>http://172.17.0.12/icons/folder.gif</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=D;O=D</url>
+  <url>http://172.17.0.12/</url>
+  <url>http://172.17.0.12/vulnerabilities/brute/</url>
+  <url>http://172.17.0.12/vulnerabilities/view_source.php</url>
+  <url>http://172.17.0.12/vulnerabilities/csrf/</url>
+  <url>http://172.17.0.12/vulnerabilities/?C=M;O=A</url>
+</urls>
